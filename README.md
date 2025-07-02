@@ -1,1 +1,2 @@
-> build based on [minimind](https://github.com/jingyaogong/minimind)
+> 去除班味，拥抱生活
+
