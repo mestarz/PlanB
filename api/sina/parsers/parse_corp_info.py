@@ -1,12 +1,13 @@
-def parse_corp_info(html_content: str) -> dict:
+from bs4 import BeautifulSoup
+
+
+def parse_corp_info(soup: BeautifulSoup) -> dict:
     """
     从新浪财经公司信息HTML中提取关键信息
     :param html_content: 包含公司信息的HTML内容
     :return: 包含公司信息的字典
     """
-    from bs4 import BeautifulSoup
 
-    soup = BeautifulSoup(html_content, "html.parser")
     info_dict = {}
     table = soup.find("table", id="comInfo1")
 
