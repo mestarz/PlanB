@@ -1,4 +1,4 @@
-from api.sina_finance import get_corpInfo, get_financial_info
+from api.sina.sina_finance import get_financial_info
 
 
 def main():
